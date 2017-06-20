@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getcommunityservice.com</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Limpieza de Playa en Naguabo</h1>
+    <p>Los pasados hemos estado sufriendo por contaminaciones de playas en Puerto Rico. Por lo tanto, los invitamios a la limpieza de playa en Tropical Beach en Naguabo.</p>
+    <img src="http://waloradio.com/wp-content/uploads/2015/08/playa-contaminada.jpg" alt="">
+    <br>
+    <br>
+    <div id="map"></div>
+
+        <script>
+          function initMap() {
+            var uluru = {lat: 18.1864637, lng:  -65.7274974};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 25,
+             center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNE5cmn8teIdxtKEk-hoXM2Oybn82U1JA&callback=initMap">
+        </script>
+  </body>
+</html>
