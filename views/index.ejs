@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <title>COMMUNITYSERVICE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Font Awesome CDN link -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Animate CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- JQuery??? -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+
+
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+  vid.removeAttribute("autoplay");
+  vid.pause();
+  pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed
+vid.pause();
+// to capture IE10
+vidFade();
+});
+
+
+pauseButton.addEventListener("click", function() {
+vid.classList.toggle("stopfade");
+if (vid.paused) {
+  vid.play();
+  pauseButton.innerHTML = "Pause";
+} else {
+  vid.pause();
+  pauseButton.innerHTML = "Paused";
+}
+})
+
+    </script>
+
+
+      <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="font">
+
+
+    <div class="parallax">
+    <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+    <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+    <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+
+
+  </div>
+
+
+
+  <div class="start">
+    <h1>Deseas comenzar la busqueda de servicio comunitario?</h1>
+    <a class="waves-effect waves-light btn-large" href="/search">Presione aqui para comenzar</a>
+  </div>
+  <div class="row">
+
+    <div class="col s5 what">
+<br>
+
+
+    <h1>Why?</h1>
+    <p>Students constantly face problems looking for a place to fulfill their hours of community service. Finding an accessible place to volunteer at a time they are available becomes a challenge. The purpose of Community Web is to provide students an easier way to find places where they can fulfill their hours.
+</div>
+
+
+  <div class="col s7 what">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img class="people"src="http://www.sempervita.org/.a/6a00d8341c570e53ef01348427246f970c-pi" alt="">
+
+  </div>
+  </div>
+  <div class="row">
+    <div class="col s7 what2">
+      <br>
+      <img class="how"src="/images/how.png" alt="">
+      <br>
+
+    </div>
+    <div class="col s5 what2">
+      <br>
+      <br>
+
+    <h1>How?</h1>
+    Community Web helps students find public service hours through a system that takes into account your area of residence, your interests, and the hours needed.
+
+    </div>
+
+  </div>
+  </div>
   </body>
 </html>

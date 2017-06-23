@@ -1,12 +1,221 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
 #map {
  height: 400px;
  width: 100%;
+}
+.font{
+    font-family: 'Bubbler One', sans-serif;
+}
+
+/*.video {
+  position: fixed;
+}*/
+
+body {
+  margin: 0;
+  background: #000;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 600px;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+
+#polina {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#polina button {
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover {
+   background: rgba(0,0,0,0.5);
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background;
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 500px) {
+  div{width:70%;}
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("http://thenewcode.com/assets/videos/polina.webm");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+  background-color: white;
+  font-size: 20px;
+  height: 1000px;
+}
+
+.searchform {
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul:hover {
+	cursor: pointer;
+  color: #ADEAEA;
+}
+
+form {
+	text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+label, input {
+  vertical-align: baseline;
+  color: #737373;
+  font-family: 'Raleway', sans-serif;
+}
+label {
+  margin: 0.125em 0.125em 0 0;
+  float: right;
+
+}
+input[type="search"] {
+  border: 2px solid #737373;
+  border-width: 0 0 3px;
+  background-color: transparent;
+  font: 22px "Open Sans", sans-serif;
+  padding: 0.125em 0.225em;
+  width: 85%;
+  float: center;
+}
+
+input[type="search"]:focus {
+  color: #E18728;
+  border-color: #E18728;
+  outline: none;
+}
+
+ul li ul {
+  max-height:250px;/* you can change as you need it */
+     overflow:auto;/* to get scroll */
+}
+
+.button {
+  border-radius: 4px;
+/*  background-color: #f4511e; */
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.start{
+  background-color: white;
+  text-align: center;
+  padding: 100px;
+}
+.what
+{
+  background-color: #e8eaf6;
+  text-align: center;
+  height: 460px;
+  margin: auto;
+  font-size: 25px;
+}
+.people{
+  width: 600px;
+  height: 165px;
+}
+.what2 {
+  background-color: #ffebee;
+  text-align: center;
+  height: 500px;
+  font-size: 25px;
+}
+.how{
+  width: 500px;
+  height: 400px;
 }

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>COMMUNITYSERVICE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Font Awesome CDN link -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--Animate CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- JQuery??? -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/" src="/"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+    <footer class="about">
+      <br />
+
+      <div class="col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-4 col-lg-6 col-lg-offset-4 col-xl-6 col-xl-offset-4">
+          <form class="searchform group">
+              <label class="period" for="search-box">
+
+              </label>
+              <input type="search" id="search-box" placeholder="Search">
+          </form>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pueblo
+            <span class="caret"></span></button>
+          <select name="select1" onmousedown="if(this.options.length>8){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;">
+          <!--<ul class="dropdown-menu">-->
+          <option value="1"><a href="#"></a>Adjuntas</option>
+       <option value="2"><a href="#">Aguada</a></option>
+       <option value="3"><a href="#">Aguadilla</a></option>
+       <option value="4"><a href="#">Aguas Buenas</a></option>
+       <option value="5"><a href="#">Aibonito</a></option>
+       <option value="6"><a href="#">Arecibo</a></option>
+       <option value="7"><a href="#">Arroyo</a></option>
+       <option value="8"><a href="#">Añasco</a></option>
+       <option value="9"><a href="#">Barceloneta</a></option>
+       <option value="10"><a href="#">Barranquitas</a></option>
+       <option value="11"><a href="#">Bayamón</a></option>
+       <option value="12"><a href="#">Cabo Rojo</a></option>
+       <option value="13">This is select number 12</option>
+       <option value="14">This is select number 12</option>
+       <option value="15">This is select number 12</option>
+       <option value="16">This is select number 12</option>
+
+            <!--<li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="#">Caguas</a></li>
+            <li><a href="#">Camuy</a></li>
+            <li><a href="#">Canóvanas</a></li>
+            <li><a href="#">Carolina</a></li>
+            <li><a href="#">Cataño</a></li>
+            <li><a href="#">Cayey</a></li>
+            <li><a href="#">Ceiba</a></li>
+            <li><a href="#">Ciales</a></li>
+            <li><a href="#">Cidra</a></li>
+            <li><a href="#">Coamo</a></li>
+            <li><a href="#">Comerío</a></li>
+            <li><a href="#">Corozal</a></li>
+            <li><a href="#">Culebra</a></li>
+            <li><a href="#">Dorado</a></li>
+            <li><a href="#">Fajardo</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">Guayama</a></li>
+            <li><a href="#">Guayanilla</a></li>
+            <li><a href="#">Guaynabo</a></li>
+            <li><a href="#">Gurabo</a></li>
+            <li><a href="#">Guánica</a></li>
+            <li><a href="#">Hatillo</a></li>
+            <li><a href="#">Hormigueros</a></li>
+            <li><a href="#">Humacao</a></li>
+            <li><a href="#">Isabela</a></li>
+            <li><a href="#">Jayuya</a></li>
+            <li><a href="#">Juana Díaz</a></li>
+            <li><a href="#">Juncos</a></li>
+            <li><a href="#">Lajas</a></li>
+            <li><a href="#">Lares</a></li>
+            <li><a href="#">Las Marías</a></li>
+            <li><a href="#">Las Piedras</a></li>
+            <li><a href="#">Loiza</a></li>
+            <li><a href="#">Luquillo</a></li>
+            <li><a href="#">Manatí</a></li>
+            <li><a href="#">Maricao</a></li>
+            <li><a href="#">Maunabo</a></li>
+            <li><a href="#">Mayagüez</a></li>
+            <li><a href="#">Moca</a></li>
+            <li><a href="#">Morovis</a></li>
+            <li><a href="#">Naguabo</a></li>
+            <li><a href="#">Naranjito</a></li>
+            <li><a href="#">Orocovis</a></li>
+            <li><a href="#">Patillas</a></li>
+            <li><a href="#">Peñuelas</a></li>
+            <li><a href="#">Ponce</a></li>
+            <li><a href="#">Quebradillas</a></li>
+            <li><a href="#">Rincón</a></li>
+            <li><a href="#">Rio Grande</a></li>
+            <li><a href="#">Sabana Grande</a></li>
+            <li><a href="#">Salinas</a></li>
+            <li><a href="#">San Germán</a></li>
+            <li><a href="#">San Juan</a></li>
+            <li><a href="#">San Lorenzo</a></li>
+            <li><a href="#">San Sebastián</a></li>
+            <li><a href="#">Santa Isabel</a></li>
+            <li><a href="#">Toa Alta</a></li>
+            <li><a href="#">Toa Baja</a></li>
+            <li><a href="#">Trujillo Alto</a></li>
+            <li><a href="#">Utuado</a></li>
+            <li><a href="#">Vega Alta</a></li>
+            <li><a href="#">Vega Baja</a></li>
+            <li><a href="#">Vieques</a></li>
+            <li><a href="#">Villalba</a></li>
+            <li><a href="#">Yabucoa</a></li>
+            <li><a href="#">Yauco</a></li>-->
+
+
+          <!--</ul>-->
+        </select>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Horas
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+
+          </ul>
+        </div>
+        <br />
+    </footer>
+  </div>
+  </body>
+</html>
