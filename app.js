@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var refugio = require('./routes/refugio.js');
 var playa = require('./routes/playa.js');
 var search = require('./routes/search.js');
+var ads = require('./routes/ads.js');
 
 var app = express();
 
@@ -28,6 +29,8 @@ app.use('/', index);
 app.use('/refugio', refugio);
 app.use('/playa', playa);
 app.use('/search', search);
+app.use('/ads', ads);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
