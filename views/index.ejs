@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>COMMUNITYSERVICE</title>
+    <script src="javascrippt.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Font Awesome CDN link -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,6 +25,14 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body>
+
     <script>
     var vid = document.getElementById("bgvid");
 var pauseButton = document.querySelector("#polina button");
@@ -58,33 +70,48 @@ if (vid.paused) {
     </script>
 
 
-      <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
     <div class="font">
 
 
-    <div class="parallax">
-    
 
-
+<nav>
+  <div class="nav-wrapper">
+    <img class="brand-logo" src="../images/surf-kindly-logo.png" alt="Surf Kindly Logo">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/search">Buscar</a></li>
+      <li><a href="/team">Nuestro equipo</a></li>
+      <li><a href="/team">Regístrate</a></li>
+      <script src="javascrippt.js" type="text/javascript"></script>
+    </ul>
   </div>
+</nav>
+
+  <!--  <div class="parallax">
+
+
+
+  </div>-->
 
 
 
   <div class="start">
-    <h1>Deseas comenzar la busqueda de servicio comunitario?</h1>
+    <h1>¿Deseas comenzar la busqueda de servicio comunitario?</h1>
     <a class="waves-effect waves-light btn-large" href="/search">Presione aqui para comenzar</a>
   </div>
   <div class="row">
 
     <div class="col s5 what">
-<br>
-
-
-    <h1>Why?</h1>
-    <p>Students constantly face problems looking for a place to fulfill their hours of community service. Finding an accessible place to volunteer at a time they are available becomes a challenge. The purpose of Community Web is to provide students an easier way to find places where they can fulfill their hours.
-</div>
+    <p id="test">
+      Los estudiantes constantemente se enfrentan con problemas en busca de obras comunitarias para cumplir con sus horas de servicio.
+    </p>
+  </div>
 
 
   <div class="col s7 what">
@@ -102,6 +129,8 @@ if (vid.paused) {
       <br>
       <br>
       <br>
+      <br>
+      <br>
       <img class="how"src="/images/how.png" alt="">
       <br>
 
@@ -110,8 +139,12 @@ if (vid.paused) {
       <br>
       <br>
 
-    <h1>How?</h1>
-    Community Web helps students find public service hours through a system that takes into account your area of residence, your interests, and the hours needed.
+    <p>
+      <br>
+      <br>
+      Ayudamos a los estudiantes a encontrar obras comunitarias a través de un sistema que tiene en cuenta su área de residencia, sus intereses y las horas necesarias.
+      Con la ayuda de ustedes, Surf Kindly ayudará a mejorar el futuro del servicio comunitario.
+</p>
 
     </div>
 

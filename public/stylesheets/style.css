@@ -2,17 +2,21 @@
  height: 400px;
  width: 100%;
 }
-.font1{
+.font1, .font {
     font-family: 'Bubbler One', sans-serif;
 }
 
 /*.video {
   position: fixed;
 }*/
-
+nav {
+  background-color: #26a69a;
+  border: #FFFFFF;
+}
 body {
   margin: 0;
   background: #000;
+  color: #000000;
 }
 video {
     position: fixed;
@@ -33,13 +37,19 @@ video {
 #polina {
   font-weight:100;
   background: rgba(0,0,0,0.3);
-  color: white;
+  color: black;
   padding: 2rem;
   width: 33%;
   margin:2rem;
   float: right;
   font-size: 1.2rem;
 }
+
+.brand-logo {
+  width: 65px;
+  height: 65px;
+}
+
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -199,6 +209,7 @@ ul li ul {
   background-color: white;
   text-align: center;
   padding: 100px;
+  margin-bottom: 20px;
 }
 .what
 {
@@ -208,6 +219,12 @@ ul li ul {
   margin: auto;
   font-size: 25px;
 }
+
+.what p {
+  padding: 40% 0;
+}
+
+
 .people{
   width: 600px;
   height: 165px;
