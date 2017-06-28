@@ -11,12 +11,9 @@
 }*/
 nav {
   background-color: #26a69a;
-  border: #FFFFFF;
 }
 body {
   margin: 0;
-  background: #000;
-  color: #000000;
 }
 video {
     position: fixed;
@@ -34,16 +31,6 @@ video {
    opacity: .5;
 }
 
-#polina {
-  font-weight:100;
-  background: rgba(0,0,0,0.3);
-  color: black;
-  padding: 2rem;
-  width: 33%;
-  margin:2rem;
-  float: right;
-  font-size: 1.2rem;
-}
 
 .brand-logo {
   width: 65px;
@@ -56,7 +43,7 @@ h1 {
   margin-top: 0;
   letter-spacing: .3rem;
 }
-#polina button {
+ button {
   display: block;
   width: 80%;
   padding: .4rem;
@@ -84,27 +71,7 @@ a {
 a:hover{
   background:rgba(0,0,0,0.9);
 }
-@media screen and (max-width: 500px) {
-  div{width:70%;}
-}
-@media screen and (max-device-width: 800px) {
-  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
-}
 
-.parallax {
-    /* The image used */
-    background-image: url("http://thenewcode.com/assets/videos/polina.webm");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .about {
   background-color: white;
@@ -208,12 +175,14 @@ ul li ul {
 .start{
   background-color: white;
   text-align: center;
-  padding: 100px;
+  padding: 100px;0
   margin-bottom: 20px;
+  border-color: #c6434f;
+  border-width: medium;
 }
 .what
 {
-  background-color: #e8eaf6;
+  background-color: white;
   text-align: center;
   height: 460px;
   margin: auto;
@@ -221,6 +190,8 @@ ul li ul {
 }
 
 .what p {
+  border-color: #c6434f;
+  border-width: 10px;
   padding: 40% 0;
 }
 
@@ -230,12 +201,15 @@ ul li ul {
   height: 165px;
 }
 .what2 {
-  background-color: #ffebee;
+  background-color: white;
   text-align: center;
-  height: 500px;
+  height: 600px;
   font-size: 25px;
 }
 .how{
-  width: 700px;
+  width: 600px;
   height: 150px;
+}
+.waves-effect .waves-light {
+  background-color: #c5cae9;
 }
