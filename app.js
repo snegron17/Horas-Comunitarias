@@ -10,7 +10,8 @@ var refugio = require('./routes/refugio.js');
 var playa = require('./routes/playa.js');
 var search = require('./routes/search.js');
 var ads = require('./routes/ads.js');
-var team = require('./routes/team.js')
+var team = require('./routes/team.js');
+var survey = require('.routes/team.js');
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.use('/playa', playa);
 app.use('/search', search);
 app.use('/team', team);
 app.use('/registracion', ads);
+app.use('/encuesta', survey);
 
 
 // catch 404 and forward to error handler
