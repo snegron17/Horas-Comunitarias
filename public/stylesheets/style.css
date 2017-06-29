@@ -1,25 +1,47 @@
+body {
+  font-family: "Bubbler One";
+  font-size: 20px;
+}
+
+.categoria {
+  text-align: center;
+}
+
+.head4 {
+  text-align: center;
+}
+
 #map {
  height: 400px;
  width: 100%;
 }
 
-container2 {
+.registration1 {
+  background-color: rgb(170, 188, 205);
+}
+
+segment2 {
   color: white;
   background-color: rgb(170, 188, 205);
 }
 
+/*segment3 {
+  background-color: #fff;
+}*/
+
+.image {
+  width: 700px;
+  height: 500px;
+}
+
 .perfil {
-  background-color: rgb(38, 164, 152);
+  background-color: rgb(170, 188, 205);
   padding: 20px;
 }
 
 .perfil2 {
-  background-color: #e8eaf6;
+  background-color: rgb(38, 164, 152);
   padding: 20px;
-}
-
-body {
-  background-color: rgb(170, 188, 205);
 }
 
 h3 {
@@ -41,8 +63,12 @@ h3 {
   position: fixed;
 }*/
 nav {
-  background-color: #e8eaf6;
+  background-color: rgb(38, 164, 152);
 }
+
+/*.nav2 {
+  background-color: rgb(38, 164, 152);
+}*/
 
 .btn, .btn-large {
   background-color: !#ffebee;
@@ -52,18 +78,14 @@ nav {
   background-color: #e8eaf6;
 }
 
-body {
-  margin: 0;
-}
-
 .stopfade {
    opacity: .5;
 }
 
-
 .brand-logo {
-  width: 65px;
-  height: 65px;
+  position: absolute;
+  width: 64px;
+  height: 64px;
 }
 
 h1 {
@@ -90,7 +112,7 @@ button:hover {
 }
 
 a {
-  display: inline-block;
+  display: table-row-group;
   color: #fff;
   text-decoration: none;
   background:rgba(0,0,0,0.5);
@@ -100,7 +122,6 @@ a {
 a:hover{
   background:rgba(0,0,0,0.9);
 }
-
 
 .about {
   background-color: white;
@@ -152,6 +173,7 @@ input[type="search"]:focus {
   border-color: #E18728;
   outline: none;
 }
+
 .pueblo{
   font-size: 15px;
   font-family: 'Bubbler One', sans-serif;
@@ -203,12 +225,22 @@ ul li ul {
 
 .start{
   background-image: url("https://farm3.staticflickr.com/2944/15139334607_178c9f2a79_b.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
   text-align: center;
   padding: 100px;0
   margin-bottom: 20px;
   border-color: #c6434f;
   border-width: medium;
 }
+
+.start h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #030803;
+}
+
 .what
 {
   background-color: rgb(170, 188, 205);
@@ -227,14 +259,14 @@ ul li ul {
 
 
 .what2 img{
-  padding: 40px;
+  padding: 5px;
 }
 .people{
   width: 650px;
   height: 165px;
 }
 .what2 {
-  background-color: rgb(196, 228, 253);
+  background-color: rgb(38, 164, 152);
   text-align: justify;
   height: 600px;
   font-size: 25px;
@@ -253,10 +285,24 @@ ul li ul {
 }
 
 .registration {
-  background-color: #e8eaf6
-}
+  background-color: rgb(38, 164, 152);
+
 
 .button2 {
   background-color: #e8eaf6;
   color: gray;
+}
+
+.image {
+  padding: 20px;
+}
+
+#equipo {
+  width: 60vw;
+  padding: 20px;
+  margin: auto;
+}
+
+#equipo img {
+
 }

@@ -3,46 +3,62 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>COMMUNITYSERVICE</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Font Awesome CDN link -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!--Animate CSS-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- JQuery??? -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>surfkindly.com</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Compiled and minified CSS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 
  <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+
+
+    <!-- Latest compiled and minified JavaScript -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+     <script src="javascrippt.js" type="text/javascript"></script>
   </head>
   <body>
-    <div style="font-family:Bubbler One">
-<div style="font-size:20px">
 
 
-    <div class="container">
-      <a href="/" src="/"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-      <br/>
-      <br>
-      <div class="box">
-        <h1>Hogar el Pequeño Joshua</h1>
-        <br />Orfanato en Bayamón
-        <h3>Bayamón</h3>
 
+    <div class="segment segment3">
+      <div class="nav2">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="/"> <img class="brand-logo" src="/images/surf-kindly-logo.png" alt="Surf Kindly Logo"></a>
+            <!-- Dropdown Structure
+            <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+          </ul>-->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/search">Buscar</a></li>
+              <li><a href="/team">Nuestro equipo</a></li>
+              <li><a href="/registracion">Regístrate</a></li>
+                <li><a href="/survey">Cuestionario</a></li>
+              <script src="javascrippt.js" type="text/javascript"></script>
+            </ul>
+          </div>
+        </nav>
       </div>
+      <br>
+      <br>
 <div class="row">
-  <div class="pueblo">
-      <b>Pueblo</b>
-  </div>
         <div class="col s4 dropdown">
+          <b>Pueblo</b>
           <select class="btn btn-primary dropdown-toggle" name="select1" onmousedown="if(this.options.length>8){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;">
-          <ul class="dropdown-menu">
+          <optgroup label="pueblos" class="dropdown-menu">
        <option value="1"><a href="#">Adjuntas</a></option>
        <option value="2"><a href="#">Aguada</a></option>
        <option value="3"><a href="#">Aguadilla</a></option>
@@ -133,16 +149,14 @@
             <option value="88"><a href="#">Villalba</a></option>
             <option value="89"><a href="#">Yabucoa</a></option>
             <option value="90"><a href="#">Yauco</a></option>
-
+          </optgroup>
         </select>
         </div>
+
         <div class="col s6">
-          <div class="categoria">
-              <b>Interes</b>
-          </div>
+              <b>Intereses</b>
             <form class="searchform group">
                 <label class="period" for="search-box">
-
                 </label>
                 <input type="search" id="search-box" placeholder="Search">
             </form>
@@ -151,64 +165,56 @@
           <div class="horas">
               <b>Horas</b>
           </div>
-            <select class="btn btn-primary dropdown-toggle" name="select2" onmousedown="if(this.options.length>8){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;">Horas
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <option value="1"><a href="#">1</a>
-            <option value="2"><a href="#">2</a>
-            <option value="3"><a href="#">3</a>
-            <option value="4"><a href="#">4</a>
-            <option value="5"><a href="#">5</a>
-            <option value="6"><a href="#">6</a>
-            <option value="7"><a href="#">7</a>
-            <option value="8"><a href="#">8</a>
-            <option value="9"><a href="#">9</a>
-            <option value="10"><a href="#">10</a>
-            <option value="11"><a href="#">11</a>
-            <option value="12"><a href="#">12</a>
-            <option value="13"><a href="#">13</a>
-            <option value="14"><a href="#">14</a>
-            <option value="15"><a href="#">15</a>
-            <option value="16"><a href="#">16</a>
-            <option value="17"><a href="#">17</a>
-            <option value="18"><a href="#">18</a>
-            <option value="19"><a href="#">19</a>
-            <option value="20"><a href="#">20</a>
-            <option value="21"><a href="#">21</a>
-            <option value="22"><a href="#">22</a>
-            <option value="23"><a href="#">23</a>
-            <option value="24"><a href="#">24</a>
-            <option value="25"><a href="#">25</a>
-            <option value="26"><a href="#">26</a>
-            <option value="27"><a href="#">27</a>
-            <option value="28"><a href="#">28</a>
-            <option value="29"><a href="#">29</a>
-            <option value="30"><a href="#">30</a>
-              <option value="31"><a href="#">31</a>
-              <option value="32"><a href="#">32</a>
-              <option value="33"><a href="#">33</a>
-              <option value="34"><a href="#">34</a>
-              <option value="35"><a href="#">35</a>
-              <option value="36"><a href="#">36</a>
-              <option value="37"><a href="#">37</a>
-              <option value="38"><a href="#">38</a>
-              <option value="39"><a href="#">39</a>
-              <option value="40"><a href="#">40</a>
-              <option value="41"><a href="#">41</a>
-              <option value="42"><a href="#">42</a>
-              <option value="43"><a href="#">43</a>
-              <option value="44"><a href="#">44</a>
-              <option value="45"><a href="#">45</a>
-              <option value="46"><a href="#">46</a>
-              <option value="47"><a href="#">47</a>
-              <option value="48"><a href="#">48</a>
-              <option value="49"><a href="#">49</a>
-              <option value="50"><a href="#">50</a>
-              </ul>
-  </div>
+          <form action="#">
+            <p class="range-field">
+              <input type="range" id="test5" min="0" max="100" class="active">
+              <span class="thumb" style="left: 90px; height: 0px; width: 0px; top: 10px; margin-left: 7px;">
+                <span class="value">50</span>
+              </span>
+            </p>
+          </form>
+        <!--  ADD SLIDER VALUES MATERIALIZE -->
+      </div>
+      </div>
+
+      <h3>Agentes de cambio</h3>
+      <br>
+      <div class="perfil">
+        <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
+        <h4>Carlos Barreno</h4>
+        <h5>Pueblo: San Juan
+        <br>
+        Intereses: Lectura, soccer, animales.
+        <br>
+        Horas de servicio: 16/100
+        <br>
+        Organizaciones compatibles: <a src="https://rabitokontento.org">Rabito Kontento,</a>
+         <a src="http://www.saveasato.org/">Save a Sato,</a>
+         Jóvenes lectores.</h5>
+      </div>
+
+      <br>
+
+      <div class="perfil2">
+        <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
+        <h4>Sofia Toro Bravo</h4>
+        <h5>Pueblo: Dorado
+        <br>
+        Intereses: Niños, yoga, agricultura, baloncesto.
+        <br>
+        Horas de servicio: 10/100
+        <br>
+        Organizaciones compatibles: <a src="http://agricultoresoroverdepr.blogspot.com/">Proyecto de agricultura,</a>
+         <a src="http://www.drdpuertorico.com/proyecto-zona-drd/">Proyecto Zona,</a>
+         Jóvenes Lectores.</h5>
+      </div>
+      <div class="mjm">
+        Trabajamos con organizaciones sin fines de lucro comprometidos por un mejor Puerto Rico.
+        La lista está en constante en crecimiento, pero se pueden nombrar ejemplos como ScubaDogs, Save a Sato,
+        Rabito Kontento, y más. Si no encuentra una organización con la que pueda colaborar,
+        contáctanos para ayudarte a crear tu grupo de servicio. Juntos levantaremos nuestro país.
       </div>
     </div>
-    </div>
-  </div>
+
   </body>
 </html>

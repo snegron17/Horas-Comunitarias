@@ -6,12 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var refugio = require('./routes/refugio.js');
-var playa = require('./routes/playa.js');
-var search = require('./routes/search.js');
-var ads = require('./routes/ads.js');
-var team = require('./routes/team.js');
-var survey = require('.routes/survey.js');
+var search = require('./routes/search');
+var ads = require('./routes/ads');
+var team = require('./routes/team');
+var survey = require('./routes/survey');
 
 var app = express();
 
@@ -28,12 +26,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/refugio', refugio);
-app.use('/playa', playa);
 app.use('/search', search);
 app.use('/team', team);
 app.use('/registracion', ads);
-app.use('/encuesta', survey);
+app.use('/survey', survey);
 
 
 // catch 404 and forward to error handler
