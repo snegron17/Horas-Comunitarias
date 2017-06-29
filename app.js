@@ -11,7 +11,7 @@ var playa = require('./routes/playa.js');
 var search = require('./routes/search.js');
 var ads = require('./routes/ads.js');
 var team = require('./routes/team.js');
-var survey = require('.routes/team.js');
+var survey = require('.routes/survey.js');
 
 var app = express();
 
