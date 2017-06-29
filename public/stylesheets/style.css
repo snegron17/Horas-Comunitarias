@@ -2,6 +2,37 @@
  height: 400px;
  width: 100%;
 }
+
+container2 {
+  color: white;
+  background-color: rgb(170, 188, 205);
+}
+
+.perfil {
+  background-color: rgb(38, 164, 152);
+  padding: 20px;
+}
+
+.perfil2 {
+  background-color: #e8eaf6;
+  padding: 20px;
+}
+
+body {
+  background-color: rgb(170, 188, 205);
+}
+
+h3 {
+  color: white;
+}
+
+.teal {
+  padding: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(38, 164, 152);
+}
+
 .font1, .font {
     font-family: 'Bubbler One', sans-serif;
 }
@@ -10,23 +41,21 @@
   position: fixed;
 }*/
 nav {
-  background-color: #26a69a;
+  background-color: #e8eaf6;
 }
+
+.btn, .btn-large {
+  background-color: !#ffebee;
+}
+
+.right {
+  background-color: #e8eaf6;
+}
+
 body {
   margin: 0;
 }
-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: 600px;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-}
+
 .stopfade {
    opacity: .5;
 }
@@ -56,7 +85,7 @@ h1 {
   cursor: pointer;
   transition: .3s background;
 }
-#polina button:hover {
+button:hover {
    background: rgba(0,0,0,0.5);
 }
 
@@ -173,7 +202,7 @@ ul li ul {
 }
 
 .start{
-  background-color: white;
+  background-image: url("https://farm3.staticflickr.com/2944/15139334607_178c9f2a79_b.jpg");
   text-align: center;
   padding: 100px;0
   margin-bottom: 20px;
@@ -182,8 +211,8 @@ ul li ul {
 }
 .what
 {
-  background-color: white;
-  text-align: center;
+  background-color: rgb(170, 188, 205);
+  text-align: justify;
   height: 460px;
   margin: auto;
   font-size: 25px;
@@ -192,24 +221,42 @@ ul li ul {
 .what p {
   border-color: #c6434f;
   border-width: 10px;
-  padding: 40% 0;
+  padding: 10% 0;
+  padding-left: 45px;
 }
 
 
+.what2 img{
+  padding: 40px;
+}
 .people{
-  width: 600px;
+  width: 650px;
   height: 165px;
 }
 .what2 {
-  background-color: white;
-  text-align: center;
+  background-color: rgb(196, 228, 253);
+  text-align: justify;
   height: 600px;
   font-size: 25px;
 }
+
+.what2 p {
+  padding: 40px;
+}
+
 .how{
   width: 600px;
   height: 150px;
 }
 .waves-effect .waves-light {
   background-color: #c5cae9;
+}
+
+.registration {
+  background-color: #e8eaf6
+}
+
+.button2 {
+  background-color: #e8eaf6;
+  color: gray;
 }
