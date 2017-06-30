@@ -20,7 +20,7 @@ body {
   background-color: rgb(170, 188, 205);
 }
 
-segment2 {
+.segment2 {
   color: white;
   background-color: rgb(170, 188, 205);
 }
@@ -305,4 +305,9 @@ ul li ul {
 
 #equipo img {
 
+}
+
+.intereses {
+	text-align: center;
+	padding: 20px;
 }
